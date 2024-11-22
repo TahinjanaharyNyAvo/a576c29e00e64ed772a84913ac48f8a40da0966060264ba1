@@ -1,0 +1,6 @@
+services:
+  nextjs: 
+    image: nextjs:1.0
+    build: .
+    restart: unless-stopped
+    ports: ["3000:3000"]
